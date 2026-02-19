@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Tests\Roles;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use App\Roles\Role;
 use App\Roles\Villageois;
 use App\Roles\LoupGarou;
 
+#[CoversClass(Villageois::class)]
+#[CoversClass(LoupGarou::class)]
 class RoleTest extends TestCase
 {
     public function testVillageoisImplementsRoleInterface(): void

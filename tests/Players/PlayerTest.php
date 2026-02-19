@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Tests\Players;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use App\Players\Player;
 use App\Roles\Villageois;
 use App\Roles\LoupGarou;
+
+#[CoversClass(Player::class)]
 
 class PlayerTest extends TestCase
 {
